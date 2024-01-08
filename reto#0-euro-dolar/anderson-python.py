@@ -1,15 +1,8 @@
-# Reto #0 - Convertir de Euro a dolar
 
-euros_ingresados = input("Ingresa la cantidad en euros: ")
+# Reto #0 - Convertir de Euro a dólar
 
-if euros_ingresados.replace(".", "", 1).isdigit():
-    euros_ingresados = float(euros_ingresados)
+euro_ingresado = float(input("Ingrese la cantidad en euros: "))
 
-    tipo_cambio = 1.09
+cambio_dolar = euro_ingresado*1.09475
 
-    dolares_convertidos = round(euros_ingresados * tipo_cambio, 2)
-    
-    print(f"{euros_ingresados} euros son aproximadamente {dolares_convertidos} dólares.")
-else:
-    print("Por favor, ingresa una cantidad válida en euros.")
-
+print(f" {euro_ingresado} euros en dólares son {cambio_dolar}") 
